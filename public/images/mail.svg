@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 14" width="16" height="14">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #8495b7 } 
+	</style>
+	<path id="ic_mail" fill-rule="evenodd" class="shp0" d="M0 0L16 0L16 14L0 14L0 0ZM2 12L14 12L14 3.34L8.35 8.99L8 8.64L7.65 8.99L2 3.34L2 12ZM8 6.66L12.66 2L3.34 2L8 6.66Z" />
+</svg>

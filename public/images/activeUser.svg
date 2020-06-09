@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 16" width="14" height="16">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #49abfe } 
+	</style>
+	<path id="ic_user" fill-rule="evenodd" class="shp0" d="M7 0C9.21 0 11 1.79 11 4C11 5.4 10.28 6.63 9.19 7.35C11.98 8.27 14 10.9 14 14L14 16L12 16L12 14C12 11.24 9.76 9 7 9C4.24 9 2 11.24 2 14L2 16L0 16L0 14C0 10.9 2.02 8.27 4.81 7.35C3.72 6.63 3 5.4 3 4C3 1.79 4.79 0 7 0ZM5 4C5 5.1 5.9 6 7 6C8.1 6 9 5.1 9 4C9 2.9 8.1 2 7 2C5.9 2 5 2.9 5 4Z" />
+</svg>

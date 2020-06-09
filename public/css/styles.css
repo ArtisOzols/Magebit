@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none; 
+}
+a:hover {
+    text-decoration: none; 
+}
+
+.bg-img {
+    background-image: url("./../images/Layer1.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.copyr {
+    position: absolute;
+    bottom: 3%;    
+    width: 100%;
+    text-align: center;
+    color: #a7b3cb;    
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.text-h {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+/* Dark box */
+.dark-box {
+    position: absolute;
+    display: flex;
+    top: 20%;
+    bottom: 20%;
+    left: 17%;
+    right: 17%;
+    background-color: rgba(15, 26, 47, 0.9);
+}
+.info-text {
+    padding: 90px 125px 100px 90px;
+    align-self: center;
+    width: 50%;
+    color: white;    
+}
+
+/* Blue line */
+h2::after, #title::after {
+    content:"";
+    margin-top: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 2.5px;
+    background-color: #49abfe ;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 30px;
+    background-color: transparent;
+    color: white;
+    width: 150px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 15px 35px;
+    transition: background-color .1s, border-color .1s;
+}
+.blue-btn {
+    border: 2px solid #49abfe;
+}
+.orange-btn {
+    border: 2px solid #f89a35;
+    background-color: #f89a35 !important;
+    top: 20px;
+}
+.blue-btn:hover {
+    background-color: #49abfe !important;
+    color: white;
+}
+.orange-btn:hover {
+    background-color: #f8bf35 !important;
+    border-color: #f8bf35;
+    color: white;
+}
+
+
+/* White box */
+.white-box {
+    position: absolute;
+    top: -5%;
+    bottom: -5%;
+    right: 2%;
+    left: 47%;
+    background-color: white;
+    box-shadow: 0px 37px 32px 0px rgba(0,0,0,0.12);
+
+    padding: 70px 100px;
+    align-self: center;  
+    line-height: 30px;
+}
+.blue-shadow {
+    position: absolute;
+    top: -5%;
+    bottom: -5%;
+    right: 52.8%;
+    left: 0;
+    border-right: 8px solid #81d0f1;
+    border-left: 1px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    z-index: -1;
+}
+
+
+input {
+    border-color: transparent;
+    border-bottom: 1px solid lightgray;
+    position: absolute;    
+    left: -3px;
+    top: 50px;
+    width: 100%;
+    color: black;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+#mail:focus~img{
+    content: url('./../images/activeMail.svg');
+}
+#password:focus~img{
+    content: url('./../images/activeLock.svg');
+}
+#name:focus~img{
+    content: url('./../images/activeUser.svg');
+}
+input:focus~#placeholder {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.placeholder {
+    z-index: 30;
+    position: relative;
+    margin: 10px 0 20px 0;
+    display: flex;
+    color: #8495b7;
+}
+.p-relative {
+    position: relative;
+    display: flex;
+}
+.p-absolute {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: #8495b7;
+}
+.red {
+    color: red;
+}
+.logo {
+    position: absolute;
+    right: 0;    
+    top: 20px;
+    height: 30px;
+}
+
+#regForm{
+    opacity: 0;
+    transition: opacity 1s;
+}
+#regForm>label, #regForm>div, #regForm>input {
+    top: -210px;
+}
+#logForm {
+    transition: opacity 1s;
+}
+#logForm>label, #logForm>div, #logForm>input, #logForm {
+    z-index: 50;
+}
+.loginError {
+    position: absolute;
+    top: 28%;
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .dark-box {
+        top: 18%;
+        bottom: 18%;
+        left: 12%;
+        right: 12%;
+    }
+
+}
+
+@media only screen and (max-width: 1111px) {
+    a {
+        top: 120px !important;
+    }
+    input.orange-btn {
+        left: 20%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .btn {
+        padding: 12px 9px;
+        width: 100px;
+    }
+    .info-text {
+        padding: 50px 70px 60px 50px;
+    }
+    .white-box {
+        box-shadow: 0px 7px 32px 0px rgba(0,0,0,0.12);
+        padding: 70px 80px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .dark-box {
+        top: 5% !important;
+        bottom: 9% !important;
+        left: 10% !important;
+        right: 10% !important; 
+        display:flex !important;
+        flex-flow: column !important;
+    }
+    div.info-text:first-child {
+        order: 2;
+    }
+    .info-text {
+        width: 90%;
+        height: 50%;
+        padding: 10px 30px !important;
+    }
+    .white-box {
+        position: absolute;
+        top: 4%;
+        bottom: 47%;
+        right: -5%;
+        left: -5%;
+        background-color: white;
+        box-shadow: none;
+        padding: 20px 50px !important;
+    }
+    .blue-shadow {
+        top: 53%;
+        right: -5%;
+        left: -5%;        
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        border-bottom: 1px solid transparent;
+        border-top: 8px solid #81d0f1;
+    }
+    input {
+        width: 50%;
+    }
+    #mail~img, #password~img, #name~img {
+        right: 50%;
+    }
+    label.placeholder {
+        margin: 0px 0 10px 0;
+    }
+
+    form div.p-relative {
+        position: absolute;
+        width: 90%;
+    }
+    input.orange-btn {
+        left: 53% !important;
+        top: -90px !important;
+    }
+    #regForm input.orange-btn {
+        left: 53% !important;
+        top: 405px !important;
+    }
+
+    #regForm label {
+        top: -150px;
+    }
+ 
+    a {
+        right: 20% !important;
+        top: -30px !important;
+        text-align: right;
+    }
+
+
+}
